@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work05/cartoons.dart';
+import 'package:home_work05/search.dart';
 
 class ApiPage extends StatefulWidget {
   const ApiPage({super.key});
@@ -42,6 +43,7 @@ class _ApiPageState extends State<ApiPage> {
     return Scaffold(
       body: Column(
         children: [
+          Text('Cartoon List',style: TextStyle(fontSize: 40.00),),
           Expanded(
             child: _cartoons == null
                 ? SizedBox.shrink()
@@ -66,7 +68,8 @@ class _ApiPageState extends State<ApiPage> {
                       );
                     },
                   ),
-          )
+          ),
+          
         ],
       ),
     );
@@ -102,5 +105,7 @@ class _ApiPageState extends State<ApiPage> {
     },
   );
 }
+
+
 
 }
