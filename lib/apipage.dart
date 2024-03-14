@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work05/cartoons.dart';
-import 'package:home_work05/search.dart';
 
 class ApiPage extends StatefulWidget {
   const ApiPage({super.key});
